@@ -1,0 +1,16 @@
+syntax = "proto3";
+package proto;
+// option go_package = "wcservice-gRPC/chat";
+option go_package = "wcgRPC/proto";
+
+message Input {
+  string body = 1;
+}
+
+message Output{
+    string body =1;
+}
+
+service ChatService {
+  rpc WordCount(Input) returns (Output) {}
+}
