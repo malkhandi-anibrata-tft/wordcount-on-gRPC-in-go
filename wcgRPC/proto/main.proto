@@ -1,6 +1,6 @@
 syntax = "proto3";
 package proto;
-// option go_package = "wcservice-gRPC/chat";
+
 option go_package = "wcgRPC/proto";
 
 message Input {
